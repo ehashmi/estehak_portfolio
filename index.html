@@ -43,6 +43,8 @@
   <header id="header" class="header d-flex flex-column justify-content-center">
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"
+      title="Switch to dark theme"><i class="bi bi-moon-stars-fill" aria-hidden="true"></i></button>
 
     <nav id="navmenu" class="navmenu">
       <ul>
@@ -96,42 +98,48 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
+        <div class="row gy-5 align-items-center justify-content-center about-layout">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <div class="profile-frame">
+              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Estehak Ansari">
+              <span class="availability"><i class="bi bi-circle-fill"></i> Open to work</span>
+            </div>
           </div>
           <div class="col-lg-8 content">
-            <h2>Unity Game Developer with experience in 2D and 3D games, AR and VR projects, including multiplayer
-              functionality. Also experienced in Java development on SpringBoot.</h2>
-            <p class="fst-italic py-3"> <!-- add anything about you--> </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>04 August 1997</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-9031999436</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Current City:</strong> <span>Gurugram, India</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Project Videos: <a
-                        href="http://www.youtube.com/@EstehakPortfolio">Link</a></strong></li>
-                </ul>
+            <p class="about-eyebrow">Unity · AR/VR · Backend</p>
+            <h2>Building immersive experiences and dependable software.</h2>
+            <p class="about-summary">Unity Game Developer experienced in 2D and 3D games, AR/VR, multiplayer systems,
+              and Java Spring Boot development. I turn product ideas into polished, performant applications.</p>
+
+            <div class="row g-3 about-details">
+              <div class="col-md-6">
+                <div class="detail-item"><i class="bi bi-geo-alt"></i>
+                  <div><span>Based in</span><strong>Gurugram, India</strong></div>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech (Computer
-                      Science)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ehashmi4786@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Current Status:</strong> <span>Open to Work</span>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Job Preferred Location:</strong> <span>Gurugram,
-                      Noida,
-                      Delhi, UAE, Soudi Arabia</span>
-                  </li>
-                </ul>
+              <div class="col-md-6">
+                <div class="detail-item"><i class="bi bi-mortarboard"></i>
+                  <div><span>Education</span><strong>B.Tech, Computer Science</strong></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="detail-item"><i class="bi bi-briefcase"></i>
+                  <div><span>Availability</span><strong>Freelance Projects</strong></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="detail-item"><i class="bi bi-globe2"></i>
+                  <div><span>Preferred locations</span><strong>Gurugram, Noida, India &amp; UAE</strong></div>
+                </div>
               </div>
             </div>
-            <p class="py-3"><!--write anything about you--> </p>
+
+            <div class="about-actions">
+              <a href="mailto:ehashmi4786@gmail.com" class="about-button"><i class="bi bi-envelope"></i> Get in
+                touch</a>
+              <a href="http://www.youtube.com/@EstehakPortfolio" class="about-link" target="_blank" rel="noopener"><i
+                  class="bi bi-play-circle"></i> Watch projects</a>
+            </div>
           </div>
         </div>
       </div>
@@ -148,9 +156,9 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-emoji-smile"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Happy Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+                class="purecounter stat-percent"></span>
+              <p>Client Satisfaction</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -173,11 +181,11 @@
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
+            <i class="bi bi-lightning-charge"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hard Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                class="purecounter stat-percent"></span>
+              <p>Commitment to Quality</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -201,61 +209,48 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-content skills-animation">
-
-          <div style="display: flex; justify-content: center; align-items: flex-start; margin: 35px auto;">
-            <!-- Left Column -->
-            <div style="flex: 1; padding: 20px; text-align: center;">
-              <img src="assets/img/skills/unity_logo_image.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress">
-                <span class="skill">Unity 3D <i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/c_sharp_logo.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">C# <i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/arcore_vuforia_combined.png" class="img-fluid" alt="" height="150"
-                width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">ARCore, ARFoundation, Vuforia SDKs<i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/dsa_image.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">Data Structures and Algorithms <i class="val"></i></span>
-              </div>
-            </div>
-
-            <!-- Middle Blue Divider -->
-            <div style="width: 2px; background-color: rgb(39, 39, 105); margin: 0 20px; height: 100%;"></div>
-
-            <!-- Right Column -->
-            <div style="flex: 1; padding: 20px; text-align: center;">
-              <img src="assets/img/skills/java_logo.png" class="img-fluid" alt="" height="125" width="125">
-              <div class="progress">
-                <span class="skill">Java<i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/spring_boot_logo.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">SpringBoot <i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/mysql_logo.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">MySQL <i class="val"></i></span>
-              </div>
-
-              <img src="assets/img/skills/postman_logo.png" class="img-fluid" alt="" height="150" width="150">
-              <div class="progress" style="margin:25px auto;">
-                <span class="skill">JSON <i class="val"></i></span>
-              </div>
-            </div>
-
+        <div class="row g-4 skills-grid">
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/unity_logo_image.png" alt="Unity 3D logo">
+              <h3>Unity 3D</h3>
+            </article>
           </div>
-
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/c_sharp_logo.png" alt="C Sharp logo">
+              <h3>C#</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/arcore_vuforia_combined.png"
+                alt="ARCore and Vuforia logos">
+              <h3>AR SDKs</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/dsa_image.png" alt="Data structures illustration">
+              <h3>Data Structures</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/java_logo.png" alt="Java logo">
+              <h3>Java</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/spring_boot_logo.png" alt="Spring Boot logo">
+              <h3>Spring Boot</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/mysql_logo.png" alt="MySQL logo">
+              <h3>MySQL</h3>
+            </article>
+          </div>
+          <div class="col-6 col-md-3">
+            <article class="skill-card"><img src="assets/img/skills/postman_logo.png" alt="Postman logo">
+              <h3>REST APIs</h3>
+            </article>
+          </div>
         </div>
 
       </div>

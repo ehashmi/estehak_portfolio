@@ -10,6 +10,32 @@
   "use strict";
 
   /**
+   * Persistent light / dark theme
+   */
+  const themeToggle = document.querySelector('.theme-toggle');
+  const storedTheme = localStorage.getItem('portfolio-theme');
+  const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+  function applyTheme(theme) {
+    const isDark = theme === 'dark';
+    document.body.classList.toggle('theme-dark', isDark);
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} theme`);
+      themeToggle.setAttribute('title', `Switch to ${isDark ? 'light' : 'dark'} theme`);
+      themeToggle.innerHTML = `<i class="bi bi-${isDark ? 'sun-fill' : 'moon-stars-fill'}" aria-hidden="true"></i>`;
+    }
+  }
+
+  applyTheme(storedTheme || preferredTheme);
+
+  themeToggle?.addEventListener('click', () => {
+    const nextTheme = document.body.classList.contains('theme-dark') ? 'light' : 'dark';
+    localStorage.setItem('portfolio-theme', nextTheme);
+    applyTheme(nextTheme);
+  });
+
+  /**
    * Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
