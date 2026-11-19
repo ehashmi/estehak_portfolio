@@ -922,6 +922,7 @@ section,
 .contact .info-item p { color: color-mix(in srgb, var(--default-color), transparent 26%); line-height: 1.45; }
 .contact .php-email-form { box-shadow: 0 18px 38px color-mix(in srgb, var(--default-color), transparent 91%); padding: 34px; }
 .contact .php-email-form input[type=text], .contact .php-email-form input[type=email], .contact .php-email-form textarea { background: color-mix(in srgb, var(--background-color), transparent 25%); border-radius: 10px; }
+.form-honeypot { display: none; }
 .contact .php-email-form button[type=submit] { font-family: var(--nav-font); font-weight: 600; padding: 12px 28px; }
 
 @media (max-width: 767px) {
