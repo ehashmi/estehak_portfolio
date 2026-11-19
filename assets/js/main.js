@@ -14,7 +14,6 @@
    */
   const themeToggle = document.querySelector('.theme-toggle');
   const storedTheme = localStorage.getItem('portfolio-theme');
-  const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
   function applyTheme(theme) {
     const isDark = theme === 'dark';
@@ -27,7 +26,7 @@
     }
   }
 
-  applyTheme(storedTheme || preferredTheme);
+  applyTheme(storedTheme || 'dark');
 
   themeToggle?.addEventListener('click', () => {
     const nextTheme = document.body.classList.contains('theme-dark') ? 'light' : 'dark';
