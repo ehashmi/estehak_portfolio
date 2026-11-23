@@ -1832,6 +1832,24 @@ section,
   margin: 0;
 }
 
+.skills-grid .skill-card-icon .skill-icon {
+  align-items: center;
+  background: color-mix(in srgb, var(--accent-color), transparent 87%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 18px;
+  color: var(--accent-color);
+  display: inline-flex;
+  font-size: 3.1rem;
+  height: 88px;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 128px;
+}
+
+@media (min-width: 992px) {
+  .skills-grid > .col-md-3 { flex: 0 0 auto; width: 20%; }
+}
+
 .resume .row { --bs-gutter-x: 3.5rem; }
 
 .resume .resume-title {
